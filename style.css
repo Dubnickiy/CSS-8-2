@@ -1,0 +1,90 @@
+body {
+  background: #3b3f45;
+}
+.content {
+  width: 1100px;
+  margin: 0 auto;
+}
+h1 {
+  background: #30343a;
+  margin: 0;
+  text-align: center;
+  color: #b94244;
+}
+#pickles::after {
+  content: "(for the next lessons about CSS)";
+  top: 50%;
+  font-size: 16px;
+  color: #f0eff1;
+}
+#apples::after {
+  content: " (for more CSS manipulations)";
+  top: 50%;
+  font-size: 16px;
+  color: #f0eff1;
+}
+#oranges::after {
+  content: " (because they are awesome)";
+  top: 50%;
+  font-size: 16px;
+  color: #f0eff1;
+}
+#plates::after {
+  content: " (hm... they always disappear)";
+  top: 50%;
+  font-size: 16px;
+  color: #f0eff1;
+}
+#bentos::after {
+  top: 50%;
+  font-size: 16px;
+  color: #f0eff1;
+}
+#bottle::after {
+  content: " (for my friends)";
+  top: 50%;
+  font-size: 16px;
+  color: #f0eff1;
+}
+input:checked + label,
+input:checked + #pickles::after,
+input:checked + #apples::after,
+input:checked + #oranges::after,
+input:checked + #plates::after,
+input:checked + #bentos::after,
+input:checked + #bottle::after {
+  text-decoration: line-through;
+  color: #3e3d46;
+}
+h1 + ul {
+  padding: 0;
+}
+li {
+  background: #5a566d;
+  padding: 6px 7px;
+  list-style: none;
+  text-align: left;
+  color: #ffffff;
+  transition: 0.35s;
+  border-top: 3px solid #76728a;
+  border-bottom: 3px solid #76728a;
+}
+li:nth-child(even) {
+  background: #76728a;
+  border-top: 3px solid #76728a;
+  border-bottom: 3px solid #76728a;
+}
+li:hover {
+  border-top: 3px solid #ffffff;
+  border-bottom: 3px solid #ffffff;
+  background: #76728a;
+}
+li:active {
+  background: #f53034;
+}
+p {
+  background: #4a4f56;
+  text-align: center;
+  color: #f56163;
+  font-size: 26px;
+}
